@@ -10,7 +10,7 @@ Name convention for Branch name: **FirstName_LastNameInitial_TaskJiraID**
 
 3 Make changes in your branch
 
-4 Run **git status **(Changed files will appear in red)
+4 Run **git status** (Changed files will appear in red)
 
 To see the difference, you can also use **git diff**
 
@@ -18,8 +18,8 @@ To see the difference, you can also use **git diff**
 
 6 To check that you added all the changes **git status** (Updated files will be shown in green)
 
-7 To add your changes from stage to your branch, type **git commit -m “message_text_explaining_what_was_modified"
-**
+7 To add your changes from stage to your branch, type **git commit -m “message_text_explaining_what_was_modified"**
+
 8 You could recheck the commit history by typing **git log**
 
 9 Switch to master to update code on master branch: **git checkout master** AND **git pull**
