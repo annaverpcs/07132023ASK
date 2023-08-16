@@ -1,12 +1,13 @@
 Initial project for assessment control selenium tests 
 Assessment control selenium tests
 
-**How to push your changes to GitHub
-**
-1 Cut your own branch from master locally: **git checkout -b name_of_your_branch** OR **git switch -c name_of_your_branch**. Name convention for Branch name: **FirstName_LastNameInitial_TaskJiraID
-**
-2 To verify that you created the branch (your currently branch will appear in green) **git branch
-**
+**How to push your changes to GitHub**
+
+1 Cut your own branch from master locally: **git checkout -b name_of_your_branch** OR **git switch -c name_of_your_branch**. 
+Name convention for Branch name: **FirstName_LastNameInitial_TaskJiraID**
+
+2 To verify that you created the branch (your currently branch will appear in green) **git branch**
+
 3 Make changes in your branch
 
 4 Run **git status **(Changed files will appear in red)
