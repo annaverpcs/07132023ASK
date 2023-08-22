@@ -71,7 +71,7 @@ Feature: ASK application testing
     Then AV retrieve information from db for email "tom@Sawyer.com"
 
   @asktest3
-  Scenario Outline: Student registration using AnnaVerStepDefs Data driven scenario
+  Scenario Outline: Student  registration  using  AnnaVerStepDefs  Data driven scenario
     Given AV open page "Registration"
     Then AV type <sFirstName> to field "firstName"
     Then AV type <sLastName> to field "lastName"

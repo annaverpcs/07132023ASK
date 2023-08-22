@@ -1,7 +1,7 @@
 #Author TatianaK
 #Test set ASK071323-44
 
-@ASK071323-44
+@ASK023-44713
 Feature: Smoke test for test set ASK071323-44
 
   @ASK071323-48
