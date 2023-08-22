@@ -67,7 +67,7 @@ public class TestContext {
                     // for EMEA only - disable cookies
 //                    chromePreferences.put("profile.default_content_setting_values.cookies", 2);
                     chromeOptions = new ChromeOptions();
-                    // chromeOptions.addArguments("--start-maximized");
+                   // chromeOptions.addArguments("--start-maximized");
                     chromeOptions.addArguments("--remote-allow-origins=*");
                     chromeOptions.setExperimentalOption("prefs", chromePreferences);
                     System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
