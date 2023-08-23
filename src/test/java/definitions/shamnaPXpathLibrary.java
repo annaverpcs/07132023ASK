@@ -1,6 +1,6 @@
 package definitions;
 
-public class shamnaXpathLibrary {
+public class shamnaPXpathLibrary {
     public static String sRegistrationURL = "http://ask-int.portnov.com/#/registration";
     public static String sFirstNameXpath = "//input[@formcontrolname='firstName']";
     public static String sLastNameXpath = "//input[@formcontrolname='lastName']";
