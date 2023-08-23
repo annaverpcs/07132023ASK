@@ -5,7 +5,7 @@
 Feature: Timestamp verification
 
   @ASK071323-85
-  Scenario: Updated At - time for new quiz
+  Scenario: Updated At Timestamp  for new quiz
     Given I open url "http://ask-int.portnov.com/#/login"
     Then I should see page title contains "Assessment Control"
     And I type "testing@ucho.top" into element with xpath "//input[@formcontrolname='email']"
@@ -41,7 +41,7 @@ Feature: Timestamp verification
     Then element with xpath "//mat-panel-title[contains(text(), 'ShamQuiz01 07132023')]/../../..//tr[5]/td[1]" should contain text ""
 
 
-#  #Updated At timestamp verification
+#  #Updated At Timestamp verification
 #  @asktest2
 #  Scenario: Timestamp Verification Using ShamnaPStepdefs
 #    Given a user is selecting a quiz from list of Quizzes
