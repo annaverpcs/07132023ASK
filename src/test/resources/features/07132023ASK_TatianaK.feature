@@ -2,7 +2,7 @@
 #Test set ASK071323-44
 
 @ASK071323-44
-Feature: Smoke test for test set ASK071323-44
+Feature: Smoke test for test set ASK071323-44.
 
   @ASK071323-48
   Scenario: Verify user can use Alphanumeric $ special characters as full name

@@ -55,13 +55,19 @@ public class TestContext {
                     chromePreferences.put("download.default_directory", System.getProperty("user.dir") + "/src/test/resources/downloads");
                     chromePreferences.put("safebrowsing.enabled", false);
                     chromePreferences.put("plugins.always_open_pdf_externally", true);
-                    chromePreferences.put("plugins.plugins_disabled", new ArrayList<String>(){{ add("Chrome PDF Viewer"); }});
+                    chromePreferences.put("plugins.plugins_disabled", new ArrayList<String>() {{
+                        add("Chrome PDF Viewer");
+                    }});
                     chromePreferences.put("credentials_enable_service", false);
                     chromePreferences.put("password_manager_enabled", false);
+                    ChromeOptions chromeOptions = null;
+                    chromeOptions.addArguments("--headless");
+                    chromeOptions.addArguments("--no-sandbox");
+                    chromeOptions.addArguments("--disable-dev-shm-usage");
                     // for EMEA only - disable cookies
 //                    chromePreferences.put("profile.default_content_setting_values.cookies", 2);
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("--start-maximized");
+                    chromeOptions = new ChromeOptions();
+//                    chromeOptions.addArguments("--start-maximized");
                     chromeOptions.addArguments("--remote-allow-origins=*");
                     chromeOptions.setExperimentalOption("prefs", chromePreferences);
                     System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
