@@ -3,6 +3,7 @@
 @asktest
 Feature: ASK application testing
 
+
   @asktest1 @smoke @regression
   Scenario: Create and delete a Quiz
     Given  I open url "http://ask-int.portnov.com/#/login"
