@@ -61,13 +61,13 @@ public class TestContext {
                     chromePreferences.put("credentials_enable_service", false);
                     chromePreferences.put("password_manager_enabled", false);
                     ChromeOptions chromeOptions = null;
-                    chromeOptions.addArguments("--headless");
-                    chromeOptions.addArguments("--no-sandbox");
-                    chromeOptions.addArguments("--disable-dev-shm-usage");
+                   // chromeOptions.addArguments("--headless");
+                   // chromeOptions.addArguments("--no-sandbox");
+                  //  chromeOptions.addArguments("--disable-dev-shm-usage");
                     // for EMEA only - disable cookies
 //                    chromePreferences.put("profile.default_content_setting_values.cookies", 2);
-                    chromeOptions = new ChromeOptions();
-                   // chromeOptions.addArguments("--start-maximized");
+                   chromeOptions = new ChromeOptions();
+                   chromeOptions.addArguments("--start-maximized");
                     chromeOptions.addArguments("--remote-allow-origins=*");
                     chromeOptions.setExperimentalOption("prefs", chromePreferences);
                     System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");

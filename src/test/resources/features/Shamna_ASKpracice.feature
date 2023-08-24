@@ -4,7 +4,7 @@
 @asktest
 Feature: ASK application testing
 
-  @asktest1
+  @asktest1 @regression
   Scenario: Create and delete a Quiz
     Given I open url "http://ask-int.portnov.com/#/login"
     Then I should see page title contains "Assessment Control"

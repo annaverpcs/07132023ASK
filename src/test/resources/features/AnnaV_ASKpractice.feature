@@ -3,7 +3,7 @@
 @asktest
 Feature: ASK application testing
 
-  @asktest1
+  @asktest1 @smoke @regression
   Scenario: Create and delete a Quiz
     Given  I open url "http://ask-int.portnov.com/#/login"
     Then I should see page title contains "Assessment Control"
@@ -53,7 +53,7 @@ Feature: ASK application testing
     Then AV activate the user
     Then AV retrieve information from db for email "mary@poppins.com"
 
-  @asktest3
+  @asktest3 @regression
   Scenario: Student registration using AnnaVerStepDefs
     #Given I open url "http://ask-int.portnov.com/#/registration"
     Given AV open page "Registration"
@@ -90,5 +90,4 @@ Feature: ASK application testing
       | "123" | "#^&*"         | "tom2@Sawyer.com" |  "234"  |  "12345"   |"12345"     |  "tom2@Sawyer.com" |
       | "Tom" | "Sawyer"         | "tom3@Sawyer.com" |  "234"  |  "12345"   |"123456"     |  "tom3@Sawyer.com" |
       | "Tom" | "Sawyer"         | "tom1@Sawyer.com" |  " "  |  "12345"   |"12345"     |  "tom4@Sawyer.com" |
-
 
