@@ -1,10 +1,10 @@
 #Author TatianaK
 #Test set ASK071323-44
 
-@ASK071323-44
+@ASK023-44713
 Feature: Smoke test for test set ASK071323-44
 
-  @ASK071323-48
+  @ASK071323-48 @regression
   Scenario: Verify user can use Alphanumeric $ special characters as full name
     #login as teacher
     Given I open url "http://ask-qa.portnov.com/#/login"

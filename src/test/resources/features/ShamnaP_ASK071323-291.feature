@@ -4,8 +4,13 @@
 @asktest
 Feature: Timestamp verification
 
+<<<<<<< HEAD:src/test/resources/features/Shamna_ASKpracice.feature
+  @asktest1 @regression
+  Scenario: Create and delete a Quiz
+=======
   @ASK071323-85
   Scenario: Updated At Timestamp  for new quiz
+>>>>>>> master:src/test/resources/features/ShamnaP_ASK071323-291.feature
     Given I open url "http://ask-int.portnov.com/#/login"
     Then I should see page title contains "Assessment Control"
     And I type "testing@ucho.top" into element with xpath "//input[@formcontrolname='email']"
