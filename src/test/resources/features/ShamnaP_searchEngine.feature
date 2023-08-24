@@ -69,7 +69,7 @@ Feature: Smoke steps
     Given I open url "https://www.wiki.com/"
     Then I should see page title as "Wiki.com"
     Then I wait for element with xpath "//input[@name='q']" to be present
-    When I type "Behaviour Driven Development" into element with xpath "//input[@name='q']"
+    When I type "Automation" into element with xpath "//input[@name='q']"
     Then I click on element with xpath "//input[@name='btnG']"
     Then element with xpath "//*[@class='insecure-form']" should be displayed
 
@@ -95,3 +95,13 @@ Feature: Smoke steps
     Then I wait for element with xpath "//div[@id='div_results']" to be present
     And I wait for 5 sec
     Then element with xpath "//div[@id='div_results']" should contain text "Automation"
+
+  @Gibiru
+  Scenario: Search Engine for http://gibiru.com
+    Given I open url "http://gibiru.com"
+    Then I should see page title contains "Gibiru"
+    Then element with xpath "//input[@id='q']" should be present
+    Then I type "Automation" into element with xpath "//input[@id='q']"
+    And I click on element with xpath "//button[@type='submit']"
+    Then I wait for element with xpath "//div[@id='web-results']" to be present
+    Then element with xpath "//div[@id='web-results']" should contain text "Automation"
