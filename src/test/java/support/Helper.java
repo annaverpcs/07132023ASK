@@ -17,7 +17,7 @@ public class Helper {
     public static String getAccessToken(String userEmail) throws SQLException {
         String result = "No data";
         Connection con = DriverManager.getConnection(DB_URL, USER, PASS);
-        try(PreparedStatement pstmt = con.prepareStatement("SELECT id, activationCode FROM users WHERE email = ?");) {
+        try(PreparedStatement pstmt = con.prepareStatement("SELECT id, activationCode FROM users WHERE email = ?")) {
             pstmt.setString(1, userEmail);
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
